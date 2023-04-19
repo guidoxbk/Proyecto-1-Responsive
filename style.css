@@ -6,15 +6,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
     background-image: url(./assets/piano.jpg);
-    background-size: cover;
-    background-position: center ;
     font-family: 'Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+
 
 }
 
@@ -52,7 +50,7 @@ nav .navbar-toggle {
     margin-left: 15px;
     cursor: pointer;
     display: none;
- 
+
 }
 
 #chktoggle {
@@ -92,18 +90,16 @@ nav .navbar-toggle {
     opacity: 0.9;
 }
 .videos-container {
-    display: grid;
-    grid-gap: 20px 10px;
+ 
     margin-bottom: 30px;
     margin-top: 30px;
-    position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
     background-color: #ffffff;
     width: 100%;
-    height: 450px;
+    height: auto;
 
 }
 
@@ -112,7 +108,6 @@ nav .navbar-toggle {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    transition: 0,8;
     margin: 10px 5px;
 
 }
@@ -125,7 +120,8 @@ nav .navbar-toggle {
      font: 2.1em bold;
      background-color: #ffffff;
      opacity: 0.7;
-  
+     height: auto;
+
 }
 
 .texto-enlace-yt{
@@ -135,13 +131,13 @@ nav .navbar-toggle {
     padding: 3px ;
     opacity: 1;
     font-family: 'Rubik Pixels', cursive;
-    background-color: ;
+
 }
 
 .link-enlace-yt h2 {
     text-decoration: none;
     color: #b12c2c;
-    
+
 }
 
 .link-enlace-yt h2:hover {
@@ -159,7 +155,7 @@ nav .navbar-toggle {
     font-size: 26px;
     color: #ffffff;
     background-color: #0a0a0a;
-   
+
 
 }
 .Clases-de-piano{
@@ -215,14 +211,14 @@ nav .navbar-toggle {
   padding: 50px 50px;
   margin-top: 100px;
 
-  
+
 }
 
 .footer-distributed .footer-right img {
-   
+
     width: 35px;
     height: 35px;
-    
+
 }
 
 .footer-distributed .footer-left p {
@@ -292,7 +288,7 @@ nav .navbar-toggle {
     .nav-container{
         width: 100%;
         height: 110px;
-        
+
     }
     .logo a img {
         display: flex;
@@ -312,21 +308,21 @@ nav .navbar-toggle {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        
+
     }
-    
+
     body {
         background-image: url(./assets/piano.jpg);
         background-size: cover;
         background-position: center ;
         font-family: 'Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        
-    
+
+
     }
 
     nav .navbar-toggle{
          display: block;
-         
+
      }
          ul {
          display: flex;
@@ -338,8 +334,8 @@ nav .navbar-toggle {
          top: 80px;
          left: -100%;
          text-align: center;
-         transition: all .5s; 
- 
+         transition: all .5s;
+
          margin: 10px 0;
          padding-top:10px;
          padding-left: 50px;
@@ -352,45 +348,70 @@ nav .navbar-toggle {
          nav ul li a {
              font-size: 16px;
          }
- 
- 
+
+
      #chktoggle:checked +ul {
          left:0;
      }
  }
 
-  /* media queris Main */
+  /* media queris Main  y Section*/
 
 
  @media (min-width: 375px) and (max-width: 769px){
 
-    
+
     .banner {
         display: block;
         margin: 0 auto;
      }
     .videos-container {
-        display: block;
-        justify-content: end;
-        width: 360px;
-        height: 115px;
-        position: absolute;
-        max-width: 80%;
-    }    
+       display: inline-flex;
+        width: 100%;
+        height: auto;
+        
+        
+    }
      .enlace-yt{
-        display: none;
- }
+        display: block;
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .texto-enlace-yt{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .link-enlace-yt h2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     iframe {
         max-width: 21.8em;
         min-width: 10em;
-        margin-right: 5em;
+        
+
 
     }
     .about-me{
         display: grid;
-        grid-column: row;
+        height: auto;
+    }
 
-        
+    .gallery-container{
+        width: 100%;
+    }
+    .gallery img {
+        width: 370px;
+        height: auto;
+    }
+    .Clases-de-piano h2 {
+        font-size: 28px;
     }
 }
 
