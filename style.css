@@ -1,0 +1,416 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url(./assets/piano.jpg);
+    background-size: cover;
+    background-position: center ;
+    font-family: 'Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px 25px 25px;
+    background-color: white;
+    margin: 0;
+    font-size: 20px;
+    height: 120px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content:center;
+    width: 100px;
+    height: auto;
+    margin-left: 200px;
+
+}
+.logo a img {
+    width: 270px;
+    height: 90px;
+}
+/* menu hambuergesa */
+
+nav .navbar-toggle {
+    float:right;
+    line-height: 60px;
+    padding-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    display: none;
+ 
+}
+
+#chktoggle {
+    display: none;
+}
+
+/* Barra de navegaciion */
+
+.main-nav {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    margin:  0 20px;
+}
+
+.nav-link {
+    color: #0a0a0a;
+    text-decoration: none;
+    text-transform:inherit;
+    font-weight:bolder;
+}
+
+.banner {
+    max-width: 100%;
+    display: flex;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+.videos-container {
+    display: grid;
+    grid-gap: 20px 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    background-color: #ffffff;
+    width: 100%;
+    height: 450px;
+
+}
+
+.videos iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: 0,8;
+    margin: 10px 5px;
+
+}
+
+
+.enlace-yt {
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 10px;
+     font: 2.1em bold;
+     background-color: #ffffff;
+     opacity: 0.7;
+  
+}
+
+.texto-enlace-yt{
+    display: flex;
+    text-align: center;
+    margin-right: 50px;
+    padding: 3px ;
+    opacity: 1;
+    font-family: 'Rubik Pixels', cursive;
+    background-color: ;
+}
+
+.link-enlace-yt h2 {
+    text-decoration: none;
+    color: #b12c2c;
+    
+}
+
+.link-enlace-yt h2:hover {
+    color: #b12c2c;
+
+}
+
+.img-yt {
+    width: 30px;
+    height: 30px;
+
+}
+
+.about-me{
+    font-size: 26px;
+    color: #ffffff;
+    background-color: #0a0a0a;
+   
+
+}
+.Clases-de-piano{
+    margin: 30px;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.info {
+    margin-top: 30px ;
+    display: flex;
+    text-align: center;
+    text-decoration:dotted;
+
+
+}
+
+.gallery-container{
+    display: flex;
+   justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+.gallery img {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    border: 1rem;
+    margin:0px ;
+    margin-top: 50px;
+    width: 550px;
+    height: 100%;
+
+
+}
+
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 50px 50px;
+  margin-top: 100px;
+
+  
+}
+
+.footer-distributed .footer-right img {
+   
+    width: 35px;
+    height: 35px;
+    
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* media queris NavBAr */
+
+@media (min-width: 375px) and (max-width: 769px){
+    .nav-container{
+        width: 100%;
+        height: 110px;
+        
+    }
+    .logo a img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:-200px;
+        height: 80px;
+        width: 200px;
+    }
+
+
+}
+ /* media queris menu hamburgesa */
+
+@media (min-width: 375px) and (max-width: 769px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    body {
+        background-image: url(./assets/piano.jpg);
+        background-size: cover;
+        background-position: center ;
+        font-family: 'Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    
+    }
+
+    nav .navbar-toggle{
+         display: block;
+         
+     }
+         ul {
+         display: flex;
+         flex-direction: row;
+         position: fixed;
+         width: 100%;
+         height: 50px;
+         background-color: #585858;
+         top: 80px;
+         left: -100%;
+         text-align: center;
+         transition: all .5s; 
+ 
+         margin: 10px 0;
+         padding-top:10px;
+         padding-left: 50px;
+         }
+         nav ul li {
+             display: block;
+             margin: 50px 0;
+             line-height: 30px;
+         }
+         nav ul li a {
+             font-size: 16px;
+         }
+ 
+ 
+     #chktoggle:checked +ul {
+         left:0;
+     }
+ }
+
+  /* media queris Main */
+
+
+ @media (min-width: 375px) and (max-width: 769px){
+
+    
+    .banner {
+        display: block;
+        margin: 0 auto;
+     }
+    .videos-container {
+        display: block;
+        justify-content: end;
+        width: 360px;
+        height: 115px;
+        position: absolute;
+        max-width: 80%;
+    }    
+     .enlace-yt{
+        display: none;
+ }
+    iframe {
+        max-width: 21.8em;
+        min-width: 10em;
+        margin-right: 5em;
+
+    }
+    .about-me{
+        display: grid;
+        grid-column: row;
+
+        
+    }
+}
+
+/* Media Queries Footer*/
+
+@media (min-width: 375px) and (max-width: 769px) {
+
+
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+
+
+
